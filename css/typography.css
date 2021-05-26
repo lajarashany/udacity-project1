@@ -1,0 +1,65 @@
+/* ---------------- */
+/* ---TYPOGRAPHY ---*/
+/* ---------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Newsreader';
+
+}
+
+
+h1{
+    color:#000000;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+h2{
+    color:#614dc8;
+  
+
+}
+
+h3{
+    color:#0a0911;
+    text-transform: uppercase;
+    
+}
+
+h4{
+    color:#0a0911;
+
+}
+
+h5{
+    color:#0a0911;
+    text-decoration:dashed;
+
+}
+
+p{
+    color:#1e1480; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 0.9;
+    
+}
+
+
+a{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Newsreader';
+
+}
+
+q{
+    color: #1e1f22;
+   
+
+}

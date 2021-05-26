@@ -1,0 +1,130 @@
+.container-blog{
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 180px auto 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "dp dp dp dp dp dp dp dp"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+
+}
+
+.card-blog{
+        display: grid;
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        width: 90%;
+        height: auto;
+        margin: auto;
+        grid-template-rows: 80vw;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px; 
+        justify-content: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-container{
+    margin:30px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container-blog{
+        position: relative;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 180px auto 100px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "dp dp dp dp dp dp dp dp"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    
+    }
+    
+}
+
+@media screen and (min-width: 500px){
+
+    .container-blog{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .header{
+        grid-area: hd; 
+    
+    }
+    
+    .description{
+        grid-area: dp;
+        background-color: rgb(237, 246, 246);
+    }
+    .sideposts{
+        grid-area: sd;
+    }
+    
+    .content{
+        grid-area:main;
+    }
+    .footer{ 
+        grid-area:ft;
+    
+         
+     }
+
+   
+    
+}
+
+
+@media screen and (max-width: 480px){
+
+    .container-blog{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .header{
+        grid-area: hd; 
+    
+    }
+    
+  
+    .sideposts{
+        grid-area: sd;
+    }
+    
+    .content{
+        grid-area:main;
+    }
+    .footer{ 
+        grid-area:ft;
+    
+         
+     }
+
+   
+    .description-h3{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 3px;
+    
+    }
+   
+    
+}
+
+

@@ -8,27 +8,79 @@
     "dp dp dp dp dp dp dp dp"
     "sd main main main main main main main"
     "ft ft ft ft ft ft ft ft";
-
+    margin-bottom: 60px;
 }
 
 .card-blog{
         display: grid;
         /* flex-direction: row; */
         /* justify-content: space-between; */
-        width: 90%;
+        width: 60%;
         height: auto;
         margin: auto;
         grid-template-rows: 80vw;
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 10px; 
+        grid-gap: 25px; 
         justify-content: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .card-container{
-    margin:30px;
+    margin:40px;
 
 }
+
+.author-img{
+    width: 10px;
+    height: 30px;
+    justify-content: left;
+}
+
+.social-icons{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.icon{
+    cursor: pointer;
+}
+.fa-facebook-f{
+    color: rgb(22, 65, 157);
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.fa-twitter{
+    color: rgb(36, 157, 232);
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.fa-paper-plane{
+    color: rgb(103, 11, 25);
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.flex-author-info{
+    display: flex;
+
+}
+
+.flex-author-info > .auhtor-img {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+  }
+
 
 @media screen and (max-width: 1200px) {
     .container-blog{

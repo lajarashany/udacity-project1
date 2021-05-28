@@ -7,14 +7,14 @@ h3,
 h4,
 h5,
 h6{
-    font-family: 'Newsreader';
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 
 h1{
     color:#000000;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Arial Narrow', sans-serif;
 
 }
 
@@ -43,7 +43,7 @@ h5{
 
 p{
     color:#1e1480; 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 20px;
     line-height: 0.9;
     
@@ -54,7 +54,7 @@ a{
     color: #000000;
     text-decoration: none;
     cursor: pointer;
-    font-family: 'Newsreader';
+    font-family: 'Arial';
 
 }
 

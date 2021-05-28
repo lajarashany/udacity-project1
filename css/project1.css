@@ -1,403 +1,137 @@
-body{
-    background-color: #ffffff;
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: 'Newspaper';
-    font-size: medium;
-    color: rgb(6, 6, 41);
-    src: url(https://fonts.gstatic.com/s/newsreader/v7/cY9XfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLFYkzbARA_n8IsQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My portfolio</title>
+
+        <meta charset="utf-8" />
+        <meta name = "name" description = "This is my portfolio created as part of Udacity project"/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+
+        <link href = "css/project1.css" type = "text/css" rel = "stylesheet" />
+        <link href = "css/typography.css" type = "text/css" rel = "stylesheet" /> 
+        <link href = "css/icon.css" type = "text/css" rel = "stylesheet" /> 
+        <script src="https://kit.fontawesome.com/f7e4b6a6a0.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
     
-} 
-
-.wrapper{
-    margin-left:auto;
-    margin-right: auto;
-}
-
-.container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 100px 180px 450px 100px;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "dp dp dp dp dp dp dp dp"
-    "sd main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-    /* border: 2px solid #1c134a; */
-}
-
-.box{
-    /* border: 2px solid #d87093; */
-    /* background-color: #7ee96e60; */
-}
-
-.header{
-    grid-area: hd; 
-    background-color: #ffffff;;   
-}
-
-.description{
-    grid-area: dp;
-    background-color: rgb(237, 246, 246);
-}
-.sideposts{
-    grid-area: sd;
-}
-
-.content{
-    grid-area:main;
-}
-.footer{ 
-    grid-area:ft;
-    background-color: #0f1017;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%; 
-    color: white;
-    text-align: center;
-     
- }
-
- .footercontent{
-     color:#ffffff;
- }
-
-
-
-/* -------------------------------- */
-/* HEADER LAYOUT AND DESIGN */
-/* ----------------------------------- */
- /* .headernav{
-    
-    padding: 7px;
-    text-decoration: none;   
-} */
-
-
-li{
-    display: inline;
-}
-
-.menu{
-    float: right;
-    margin: 15px;
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Comfortaa';
-}
-
-.menu1{
-    font-family: 'Comfortaa';
-
-}
-
-
-li:first-child{
-    float: left;
-    margin: 15px;
-}
-
-.navitems{
-    
-    margin-right: 50px;
-    text-decoration: none;
-    color:black;
-    
-}
-
-/* -------------------------------- */
-/* SIDE-POSTS LAYOUT AND DESIGN */
-/* ----------------------------------- */
-
-.sideposts{
-    background-color: #ffffff;
-}
-.sideposts-details{
-    margin: 10px;
-}
-.sidelist{
-    line-height: 1.5em;
-    /* padding: 40px; */
-}
-
-.author-desc{
-    font-weight: 100;
-    /* margin: 30px; */
-}
-
-.sideposts-btn{
-    display: inline;
-    font-family: 'Raleway', sans-serif;
-    padding: 3px;
-    border-radius: 8px;
-    border-radius: 1px solid #988379;
-    margin-right: 2px;
-    
-
-    background-color: transparent;
-    cursor: pointer;
-
-}
-
-/* -------------------------------- */
-/* CARDS-BLOG-POST LAYOUT AND DESIGN */
-/* ----------------------------------- */
-
-.cards{
-        display: grid;
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
-        width: 70vw;
-        height: 60vh;
-        margin: auto;
-        grid-template-columns: 80vw;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px; 
-        justify-content: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.cardlayout{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.cardclass{
-    margin: 10px;
-    line-height: 0.9;
-    
-    
-}
-
-
-
-.cardimg{
-    display: flex;
-    flex-direction: row;
-    width: 20vw;
-    height: 20vh; 
-  
-    
-}
-
-.p-cards{
-    margin: 10px;
-    margin-top: 15px;
-    font-size: 15px;
-    color: #000000;
-    line-height: 1.2em;
-}
-
-.p-cards-small{
-    font-size: 12px;
-    color:#000000;
-
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-  }
-
-.author{
-    font-size: 14px;;
-}
-
-.btn-card{
-    font-family: 'Raleway', sans-serif;
-    padding: 3px;
-    border-radius: 8px;
-    border-radius: 1px solid #988379;
-    margin: 10px;
-    float: right;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.btn-card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-/* -------------------------------- */
-/* DESCRIPTION TEXT DESIGN */
-/* ----------------------------------- */
-
-.description-p{
-    text-align: center;
-    font-size: 22px;
-    margin: 0 80px 0 80px;
-    font-weight: 200;
-    line-height: 1.3em;
-
-
-}
-
-.description-h3{
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 3px;
-
-}
-
-
-/* -------------------------------- */
-/* FOOTER LAYOUT AND DESIGN */
-/* ----------------------------------- */
-.footercontent{
-    text-align: center;
-    font-size: 15px;
-  
-    
-}
-
-@media screen and (max-width: 480px){
-
-    .cardimg{
-        width: auto;
-    }
-
-    .description-p{
-        text-align: center;
-        font-size: 18px;
-        margin: 0 30px 10px 30px;
-        font-weight: 200;
-        line-height: 1.3em;
-    
-    
-    }
-
-    .container{
+        <div class = "wrapper">
+            <div class = "container">
         
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    
-    }
+                    <header class="header box">
+                        <div class = "header ">
+                            <div class = "headernav">
+                                <nav>
+                                    <ul class = "navitems">
+                                        <li><a class = "menu1"><h1>LOGO</h1></a></li>
+                                        <li><a class = "menu" href = "index.html">Home</a></li>
+                                        <li><a class = "menu" href = "blog.html">Blog</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+            
 
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: auto;
-
-    }
-
-    img{
-        width: 100%;
-    }
-
-    .header{
-        grid-area: hd; 
-    
-    }
-    
-  
-    .sideposts{
-        grid-area: sd;
-    }
-    
-    .content{
-        grid-area:main;
-    }
-    .footer{ 
-        grid-area:ft;
-         
-     }
-
-   
-    .description-h3{
-        text-align: center;
-        font-size: 25px;
-        letter-spacing: 3px;
-    
-    }
-   
-    
-}
-
-@media screen and (max-width: 1200px) {
-    .container-blog{
-        position: relative;
-        display: grid;
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 100px 180px auto 100px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "dp dp dp dp dp dp dp dp"
-        "sd main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-    
-    }
-    
-}
+                    <div class="description box">
+                        <h3 class = "description-h3">Welcome to My Blog</h3>
+                        <p class = "description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <q cite = "https://www.lipsum.com/">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </q></p>
+                    </div>
+                    
+            
 
 
+                <div class="sideposts box">
+                    <div class = "sideposts-details">
+                        <h2>More blog posts</h2>
+                            <li class = "sidelist"><a href = "#">Blog Post 1</a></li><br/>
+                            <li class = "sidelist"><a href = "#">Blog Post 2</a></li><br/>
+                            <li class = "sidelist"><a href = "#">Blog Post 3</a></li><br/>
+                        <br/>
+                        <button class = "sideposts-btn">Follow us</button>
+                        <button class = "sideposts-btn">Send Message</button>
 
-@media screen and (max-width: 880px){
+                    </div>
+                </div>
 
-    .cardimg{
-        width: auto;
-    }
+     <main >
 
-    .description-p{
-        text-align: center;
-        font-size: 18px;
-        margin: 0 30px 10px 30px;
-        font-weight: 200;
-        line-height: 1.3em;
-    
-    
-    }
+                <div class="content box">
+                    <section class = "cards">
+                    
+                            <div id = "one" class = "box cardlayout">
+                                <div class ="cardclass">
+                                    <p class = "p-cards-small">Date posted</p>
+                                    <p><b>Leadership Principles</b></p>
+                                    <p class ="author"><i>Author Name</i></p>
+                                </div>
+                                <figure>
+                                    <img class = "cardimg" src = "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt ="Fox with computer"/>
+                                    <figcaption>Fox with computer</figcaption>
+                                </figure>
 
-    .container{
-        
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    
-    }
+                                <p class ="p-cards">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div>
+                                    <button type="button" class = "btn-card" onclick="window.location.href='/blog.html'">Go to post</button>
+                                </div>
 
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: auto;
+                               
+                            </div>
+                
 
-    }
 
-    img{
-        width: 100%;
-    }
+                  
+                            <div id = "two" class = " box cardlayout">
+                                <div class ="cardclass">
+                                    <p class = "p-cards-small">Date posted</p>
+                                    <p><b>Why study Computer Science</b></p>
+                                    <p class ="author"><i>Author Name</i></p>
+                                </div>
+                                <figure>
+                                        <img class = "cardimg" src = "https://images.unsplash.com/photo-1621570070356-b77aa8bf71b0?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80 alt ="Red Radish picture"/>
+                                        <figcaption>Person with computer</figcaption>
+                                    </figure>
+                                    
 
-    .header{
-        grid-area: hd; 
-    
-    }
-    
-  
-    .sideposts{
-        grid-area: sd;
-    }
-    
-    .content{
-        grid-area:main;
-    }
-    
-    .footer{ 
-        grid-area:ft;
-         
-     }
+                                    <p class ="p-cards">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    .description-h3{
-        text-align: center;
-        font-size: 25px;
-        letter-spacing: 3px;
+                                    <button  type="button" class = "btn-card" onclick="window.location.href='/blog.html'">Go to post</button>
+                            </div>
+                    
+
+                
+                            <div id = "three" class = "box cardlayout">
+                                <div class ="cardclass">
+                                    <p class = "p-cards-small">Date posted</p>
+                                    <p><b>Today's new technologies</b></p>
+                                    <p class ="author"><i>Author Name</i></p>
+                                </div>
+
+                                    <figure>
+                                        <img class = "cardimg" src = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt ="Red Bell Pepper picture"/>
+                                        <figcaption>Old computer</figcaption>
+                                    </figure>
+                                    <p class ="p-cards">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+
+                                    <button type="button" class = "btn-card" onclick="window.location.href='/blog.html'">Go to post</button>
+                            </div>    
+                     
+                    </section>
+                </div>
+        </main>
+
+
+            </div>
+        </div>
+
+            <footer>
+                <div class="footer box">
+                    <div>
+                        <h5 class = "footercontent">All copyrights reserved 2021</h5>
+                    </div>
+                </div>
+             </footer>
+
     
-    }
-   
-    
-}
+    </body>
+</html>

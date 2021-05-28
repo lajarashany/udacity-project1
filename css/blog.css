@@ -1,3 +1,8 @@
+@import "icon.css";
+@import "project1.css";
+@import "typography.css";
+
+
 .container-blog{
     position: relative;
     display: grid;

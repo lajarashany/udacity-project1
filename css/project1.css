@@ -435,9 +435,9 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
-    .container-blog{
+    /* .container-blog{
         position: relative;
-        display: grid;
+        
         grid-template-columns: 200px 200px;
         grid-template-rows: 100px 180px auto 100px;
         grid-template-areas: 
@@ -446,7 +446,7 @@ img {
         "sd main main main main main main main"
         "ft ft ft ft ft ft ft ft";
     
-    }
+    } */
 
     .cards{
         

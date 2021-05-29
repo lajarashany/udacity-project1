@@ -95,7 +95,7 @@
         grid-template-rows: 100px auto 100px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-      
+        "dp dp dp dp dp dp dp dp"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
     

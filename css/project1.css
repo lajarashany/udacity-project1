@@ -8,6 +8,7 @@ body{
     font-family: 'Newspaper';
     font-size: medium;
     color: rgb(6, 6, 41);
+   
   
 } 
 
@@ -34,10 +35,6 @@ body{
 }
 
 
-.box{
-    /* border: 2px solid #d87093; */
-    /* background-color: #7ee96e60; */
-}
 
 .header{
     grid-area: hd; 
@@ -60,6 +57,7 @@ body{
     background-color: #0f1017;
     position: absolute;
     left: 0;
+
     width: 100%; 
     color: white;
     text-align: center;
@@ -76,11 +74,6 @@ body{
 /* -------------------------------- */
 /* HEADER LAYOUT AND DESIGN */
 /* ----------------------------------- */
- /* .headernav{
-    
-    padding: 7px;
-    text-decoration: none;   
-} */
 
 
 li{
@@ -273,9 +266,19 @@ img {
 
 @media screen and (max-width: 480px){
 
+    body{
+        padding-bottom: 50px;
+    }
+
+    .wrapper{
+        margin-bottom: 150px;
+    }
+
     .cardimg{
         width: auto;
     }
+
+    
 
     .description-p{
         text-align: center;
@@ -292,15 +295,22 @@ img {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+       
     
     }
+
 
     .cards{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: auto;
+        
 
+    }
+
+    .cardlayout{
+        padding-bottom: 70px;
     }
 
     img{
@@ -319,9 +329,12 @@ img {
     
     .content{
         grid-area:main;
+       
     }
     .footer{ 
-        grid-area:ft;
+        position: fixed;
+        bottom: 0;
+
          
      }
 
@@ -336,7 +349,92 @@ img {
     
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px){
+
+    body{
+        padding-bottom: 50px;
+    }
+
+    .wrapper{
+        margin-bottom: 150px;
+    }
+
+    .cardimg{
+        width: auto;
+    }
+
+    
+
+    .description-p{
+        text-align: center;
+        font-size: 18px;
+        margin: 0 30px 10px 30px;
+        font-weight: 200;
+        line-height: 1.3em;
+    
+    
+    }
+
+    .container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    
+    }
+
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: auto;
+        
+
+    }
+
+    .cardlayout{
+        padding-bottom: 70px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .header{
+        grid-area: hd; 
+    
+    }
+    
+  
+    .sideposts{
+        grid-area: sd;
+    }
+    
+    .content{
+        grid-area:main;
+       
+    }
+    .footer{ 
+        position: fixed;
+        bottom: 0;
+
+         
+     }
+
+   
+    .description-h3{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 3px;
+    
+    }
+   
+    
+}
+
+@media screen and (max-width: 1000px) {
     .container-blog{
         position: relative;
         display: grid;
@@ -349,12 +447,37 @@ img {
         "ft ft ft ft ft ft ft ft";
     
     }
+
+    .cards{
+        
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: auto;
+            
+    }
+
+    .cardlayout{
+        padding-bottom: 70px;
+
+
+    }
+
+    .footer{
+        grid-area: ft;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+    }
     
 }
 
 
 
-@media screen and (max-width: 880px){
+/* @media screen and (max-width: 880px){ */
+@media screen and (min-width:769px) and (max-width:900px) {
+    
+
 
     .cardimg{
         width: auto;
@@ -366,7 +489,7 @@ img {
         margin: 0 30px 10px 30px;
         font-weight: 200;
         line-height: 1.3em;
-    
+
     
     }
 

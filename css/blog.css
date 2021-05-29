@@ -103,7 +103,20 @@
     
 }
 
-@media screen and (min-width: 500px){
+@media screen and (max-width: 480px){
+
+    .container-blog{
+        position: relative;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 180px auto 100px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "dp dp dp dp dp dp dp dp"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    
+    }
 
     .container-blog{
         
@@ -116,6 +129,19 @@
     .header{
         grid-area: hd; 
     
+    }
+
+    .card-blog{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: auto;
+        
+
+    }
+
+    .card-container{
+        width: auto;
     }
     
     .description{
@@ -140,14 +166,19 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 990px){
 
     .container-blog{
         
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+     
     
+    }
+
+    .card-container{
+        width: auto;
     }
 
     img{
